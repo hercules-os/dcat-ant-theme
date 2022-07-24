@@ -1,0 +1,32 @@
+{
+    "name": "hercules-os/dcat-ant-theme",
+    "alias": "",
+    "description": "ant design风格的主题",
+    "type": "library",
+    "keywords": ["dcat-admin", "extension"],
+    "homepage": "https://github.com/hercules-os/dcat-ant-theme",
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "hercules",
+            "email": "lazycat.xy@gmail.com"
+        }
+    ],
+    "require": {
+        "php": ">=7.1.0",
+        "dcat/laravel-admin": "~2.0"
+    },
+    "autoload": {
+        "psr-4": {
+            "Hercules\\Admin\\": "src/"
+        }
+    },
+    "extra": {
+        "dcat-admin": "Hercules\\Admin\\DcatAntThemeServiceProvider",
+        "laravel": {
+            "providers": [
+                "Hercules\\Admin\\DcatAntThemeServiceProvider"
+            ]
+        }
+    }
+}
